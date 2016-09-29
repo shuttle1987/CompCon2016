@@ -8,12 +8,12 @@ from knowledge_hierachy.knowledge_hierachy import (
 
 web_app_goal = Goal("Make a web app that can display tree based information")
 
-js_fundamentals = Skill("Javascript \n  fundamentals", KnowledgeState.KNOWN_AWARE)
-python_fundamentals = Skill("Python \n fundamentals", KnowledgeState.KNOWN_AWARE)
-django_skill = Skill("Django \n backend", KnowledgeState.KNOWN_AWARE)
+js_fundamentals = Skill("Javascript\nfundamentals", KnowledgeState.KNOWN_AWARE)
+python_fundamentals = Skill("Python\nfundamentals", KnowledgeState.KNOWN_AWARE)
+django_skill = Skill("Django\nbackend", KnowledgeState.KNOWN_AWARE)
 frontend_skill = Skill("JS Frontend", KnowledgeState.KNOWN_AWARE)
-mptt_skill = Skill("Store trees \n efficiently in \n relational DB???", KnowledgeState.UNKNOWN_AWARE)
-d3_skill = Skill("JS tree view \n library???", KnowledgeState.UNKNOWN_AWARE)
+mptt_skill = Skill("Store trees\nefficiently in\nrelational DB???", KnowledgeState.UNKNOWN_AWARE)
+d3_skill = Skill("JS tree view\nlibrary???", KnowledgeState.UNKNOWN_AWARE)
 REST_api_skill = Skill("REST\nAPI", KnowledgeState.KNOWN_AWARE)
 web_dev_2_nodes = [
     js_fundamentals,
