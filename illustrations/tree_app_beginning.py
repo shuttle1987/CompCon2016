@@ -1,4 +1,10 @@
-from knowledge_hierachy.knowledge_hierachy  import KnowledgeHierachy, Goal, Skill, KnowledgeState, KnowledgeRelation
+from knowledge_hierachy.knowledge_hierachy import (
+    KnowledgeHierachy,
+    Goal,
+    Skill,
+    KnowledgeState,
+    KnowledgeRelation,
+)
 
 web_app_goal = Goal("Make a web app that can display tree based information")
 
