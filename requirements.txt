@@ -1,0 +1,2 @@
+graphviz==0.5.1
+knowledge-hierachy==0.3.1
