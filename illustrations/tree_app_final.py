@@ -26,7 +26,7 @@ web_dev_2_nodes = [
     web_app_goal
 ]
 
-web_project_actual = KnowledgeHierachy("TreeVis end of project", nodes=web_dev_2_nodes)
+web_project_actual = KnowledgeHierachy("TreeVis towards end of project", nodes=web_dev_2_nodes)
 #backend
 web_project_actual.add_edge(python_fundamentals, django_skill, KnowledgeRelation.KNOWN_CONNECTION)
 web_project_actual.add_edge(mptt_skill, django_skill, KnowledgeRelation.KNOWN_CONNECTION)
