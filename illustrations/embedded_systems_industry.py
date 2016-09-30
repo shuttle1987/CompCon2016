@@ -34,6 +34,7 @@ embedded_goals = [
 embedded_skills = [
     assembly_programming_skill,
     driver_skills,
+    electronics_skills,
     fpga_skills,
     industry_specific_skills,
     industry_specific_skills_unknown,
