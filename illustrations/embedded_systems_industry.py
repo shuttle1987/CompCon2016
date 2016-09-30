@@ -6,7 +6,7 @@ from knowledge_hierachy.knowledge_hierachy import (
     KnowledgeRelation,
 )
 
-microcontroller_firmware = Goal("Create microcontroller\nbased produtcs", KnowledgeState.KNOWN_AWARE)
+microcontroller_firmware = Goal("Create microcontroller\nbased products", KnowledgeState.KNOWN_AWARE)
 embedded_linux= Goal("Create embedded\nlinux products", KnowledgeState.KNOWN_AWARE)
 
 systems_programming_skills = Skill("Systems\nprogramming", KnowledgeState.KNOWN_AWARE)
@@ -23,8 +23,8 @@ driver_skills = Skill("Writing device\ndrivers", KnowledgeState.KNOWN_AWARE)
 electronics_skills = Skill("Electronics\nskills", KnowledgeState.KNOWN_AWARE)
 fpga_skills = Skill("FPGA", KnowledgeState.UNKNOWN_AWARE)
 
-industry_specific_skills = Skill("Known industry\nspecific skill", KnowledgeState.UNKNOWN_AWARE)
-industry_specific_skills_unknown = Skill("Unknown industry\nspecific skills\n(???)", KnowledgeState.UNKNOWN_UNAWARE)
+industry_specific_skills = Skill("Industry\nspecific skill", KnowledgeState.KNOWN_AWARE)
+industry_specific_skills_unknown = Skill("Unknown\nindustry\nspecific skills\n(???)", KnowledgeState.UNKNOWN_UNAWARE)
 
 embedded_goals = [
     microcontroller_firmware,
