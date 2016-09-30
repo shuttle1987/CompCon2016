@@ -13,6 +13,7 @@ scalable_sites = Goal("Scalable services")
 
 
 backend_language_fundamentals = Skill("Backend\nprogramming\nlanguage", KnowledgeState.KNOWN_AWARE)
+backend_web_framework = Skill("Backend\nframework", KnowledgeState.KNOWN_AWARE)
 
 automated_deployments = Skill("Automated\ndeployments", KnowledgeState.KNOWN_AWARE)
 version_control = Skill("Version\ncontrol", KnowledgeState.KNOWN_AWARE)
@@ -21,7 +22,7 @@ frontend_framework = Skill("Frontend\nframework", KnowledgeState.KNOWN_AWARE)
 css_skills = Skill("CSS skills", KnowledgeState.KNOWN_AWARE)
 UI_UX_skills = Skill("UI/UX skills", KnowledgeState.KNOWN_AWARE)
 industry_specific_skills = Skill("Known industry\nspecific skill", KnowledgeState.UNKNOWN_AWARE)
-industry_specific_skills_unknown = Skill("Unknown industry\nspecific skills (???)", KnowledgeState.UNKNOWN_UNAWARE)
+industry_specific_skills_unknown = Skill("Unknown\nindustry\nspecific skills\n(???)", KnowledgeState.UNKNOWN_UNAWARE)
 
 web_dev_goals = [
     single_page_web_apps,
@@ -30,15 +31,16 @@ web_dev_goals = [
     scalable_sites,
 ]
 web_dev_skills = [
-    css_skills,
-    UI_UX_skills,
-    javascript_skills,
-    frontend_framework,
-    backend_language_fundamentals,
     automated_deployments,
-    version_control,
+    backend_language_fundamentals,
+    backend_web_framework,
+    css_skills,
+    frontend_framework,
     industry_specific_skills,
     industry_specific_skills_unknown,
+    javascript_skills,
+    UI_UX_skills,
+    version_control,
 ]
 
 web_dev_industry = KnowledgeHierachy("Web dev industry knowledge", nodes=web_dev_goals+web_dev_skills, rendering_engine='dot')
@@ -49,6 +51,7 @@ web_dev_industry.add_edge(backend_language_fundamentals, automated_deployments, 
 web_dev_industry.add_edge(automated_deployments, scalable_sites, KnowledgeRelation.KNOWN_CONNECTION)
 
 #Single page web apps goal
+web_dev_industry.add_edge(backend_web_framework, single_page_web_apps, KnowledgeRelation.KNOWN_CONNECTION)
 web_dev_industry.add_edge(version_control, single_page_web_apps, KnowledgeRelation.KNOWN_CONNECTION)
 web_dev_industry.add_edge(UI_UX_skills, single_page_web_apps, KnowledgeRelation.KNOWN_CONNECTION)
 web_dev_industry.add_edge(css_skills, single_page_web_apps, KnowledgeRelation.KNOWN_CONNECTION)
@@ -64,7 +67,8 @@ web_dev_industry.add_edge(version_control, websites, KnowledgeRelation.KNOWN_CON
 web_dev_industry.add_edge(industry_specific_skills, websites, KnowledgeRelation.KNOWN_CONNECTION)
 
 #create web APIs doal
-web_dev_industry.add_edge(backend_language_fundamentals, web_apis, KnowledgeRelation.KNOWN_CONNECTION)
+web_dev_industry.add_edge(backend_language_fundamentals, backend_web_framework, KnowledgeRelation.KNOWN_CONNECTION)
+web_dev_industry.add_edge(backend_web_framework, web_apis, KnowledgeRelation.KNOWN_CONNECTION)
 web_dev_industry.add_edge(version_control, web_apis, KnowledgeRelation.KNOWN_CONNECTION)
 
 
