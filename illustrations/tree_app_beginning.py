@@ -29,7 +29,7 @@ web_dev_2_nodes = [
 web_project_actual = KnowledgeHierachy("TreeVis beginning of project", nodes=web_dev_2_nodes)
 #backend
 web_project_actual.add_edge(python_fundamentals, django_skill, KnowledgeRelation.KNOWN_CONNECTION)
-web_project_actual.add_edge(mptt_skill, django_skill, KnowledgeRelation.KNOWN_CONNECTION)
+web_project_actual.add_edge(mptt_skill, django_skill, KnowledgeRelation.UNKNOWN_CONNECTION)
 web_project_actual.add_edge(django_skill, web_app_goal, KnowledgeRelation.KNOWN_CONNECTION)
 
 #frontend
