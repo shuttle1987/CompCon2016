@@ -9,7 +9,7 @@ from knowledge_hierachy.knowledge_hierachy import (
 
 example_goal = Goal("Photocopy documents")
 
-photocopy_skill = Skill("use \n photocopier", KnowledgeState.KNOWN_AWARE)
+photocopy_skill = Skill("use\nphotocopier", KnowledgeState.KNOWN_AWARE)
 
 example = KnowledgeHierachy("Photocopying example", nodes=[photocopy_skill, example_goal])
 example.add_edge(photocopy_skill, example_goal, KnowledgeRelation.KNOWN_CONNECTION)
