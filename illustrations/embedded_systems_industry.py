@@ -21,7 +21,7 @@ driver_skills = Skill("Writing device\ndrivers", KnowledgeState.KNOWN_AWARE)
 
 
 electronics_skills = Skill("Electronics\nskills", KnowledgeState.KNOWN_AWARE)
-fpga_skills = Skill("FPGA", KnowledgeState.KNOWN_AWARE)
+fpga_skills = Skill("FPGA", KnowledgeState.UNKNOWN_AWARE)
 
 industry_specific_skills = Skill("Known industry\nspecific skill", KnowledgeState.UNKNOWN_AWARE)
 industry_specific_skills_unknown = Skill("Unknown industry\nspecific skills\n(???)", KnowledgeState.UNKNOWN_UNAWARE)
