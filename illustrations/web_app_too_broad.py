@@ -5,7 +5,7 @@ from knowledge_hierachy.knowledge_hierachy import (
     KnowledgeState,
     KnowledgeRelation,
 )
-example_goal = Goal("Create a complex single page web app")
+example_goal = Goal("Make a web app that can display tree based information")
 
 webdev_everything_skill = Skill("web development\nskills", KnowledgeState.UNKNOWN_AWARE)
 
