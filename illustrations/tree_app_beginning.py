@@ -13,7 +13,7 @@ python_fundamentals = Skill("Python\nfundamentals", KnowledgeState.KNOWN_AWARE)
 django_skill = Skill("Django\nbackend", KnowledgeState.KNOWN_AWARE)
 frontend_skill = Skill("JS Frontend", KnowledgeState.KNOWN_AWARE)
 mptt_skill = Skill("Store trees\nefficiently in\nrelational DB\n???", KnowledgeState.UNKNOWN_UNAWARE)
-d3_skill = Skill("JS tree view\nlibrary???", KnowledgeState.UNKNOWN_AWARE)
+d3_skill = Skill("JS tree \nview\nlibrary???", KnowledgeState.UNKNOWN_AWARE)
 REST_api_skill = Skill("REST\nAPI", KnowledgeState.KNOWN_AWARE)
 web_dev_2_nodes = [
     js_fundamentals,
